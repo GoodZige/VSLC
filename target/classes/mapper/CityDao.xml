@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.ICityDao">
+
+    <resultMap type="com.vslc.model.City" id="cityMap">
+        <id property="cityID" column="cityID"/>
+        <result property="cityName" column="cityName"/>
+        <result property="provinceID" column="provinceID"/>
+    </resultMap>
+
+    <select id="findByProvinceID" parameterType="string" resultMap="cityMap">
+        SELECT c.*
+        FROM city AS c
+        WHERE c.provinceID = #{provinceID}
+    </select>
+</mapper>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="vslc@localhost" uuid="300e8058-180b-4320-8102-f996bf07c93c">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <introspection-schemas>*:vslc</introspection-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei","SimHei", "Helvetica Neue", Arial, "Droid Sans", sans-serif;
+    font-size: .18rem;
+    min-width: 0px;
+}
+html {
+    font-size: 100px;
+}
+@media only screen and (max-width: 0px) {
+    html {
+        font-size: 50px !important
+    }
+}
+@media only screen and (min-width: 1920px) {
+    html {
+        font-size: 100px !important
+    }
+}
+a {
+    color: black;
+    text-decoration: none;
+}

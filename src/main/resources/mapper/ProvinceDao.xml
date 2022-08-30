@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.IProvinceDao">
+
+    <resultMap type="com.vslc.model.Province" id="provinceMap">
+        <id property="provinceID" column="provinceID"/>
+        <result property="provinceName" column="provinceName"/>
+    </resultMap>
+
+    <select id="find"  resultMap="provinceMap">
+        SELECT p.*
+        FROM province AS p
+    </select>
+</mapper>

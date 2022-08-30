@@ -1,0 +1,10 @@
+[{
+    "id" : "1",
+    "imageMethod" : "平扫"
+},{
+    "id" : "2",
+    "imageMethod" : "增强"
+},{
+    "id" : "3",
+    "imageMethod" : "肺动脉CTA"
+}]

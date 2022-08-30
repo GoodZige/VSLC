@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.IUserDao">
+
+    <resultMap type="com.vslc.model.User" id="userMap">
+        <id property="userID" column="userID"/>
+        <result property="userAccount" column="userAccount"/>
+        <result property="userPassword" column="userPassword"/>
+        <result property="realName" column="realName"/>
+        <result property="sex" column="sex"/>
+        <result property="birthday" column="birthday"/>
+        <result property="cardID" column="cardID"/>
+        <result property="address" column="address"/>
+        <result property="postCode" column="postCode"/>
+        <result property="title" column="title"/>
+        <result property="tel" column="tel"/>
+        <result property="fax" column="fax"/>
+        <result property="email" column="email"/>
+        <result property="regDate" column="regDate"/>
+
+        <association property="permissionGroup" javaType="com.vslc.model.PermissionGroup" >
+            <id property="permissionGroupID" column="permissionGroupID"/>
+            <result property="permissionGroupName" column="permissionGroupName"/>
+            <result property="baseMod" column="baseMod"/>
+            <result property="taskMod" column="taskMod"/>
+            <result property="uploadMod" column="uploadMod"/>
+            <result property="dataMod" column="dataMod"/>
+            <result property="drawMod" column="drawMod"/>
+            <result property="drawVerifyMod" column="drawVerifyMod"/>
+            <result property="signMod" column="signMod"/>
+            <result property="signVerifyMod" column="signVerifyMod"/>
+        </association>
+
+        <association property="hospital" javaType="com.vslc.model.Hospital" >
+            <id property="hospitalID" column="hospitalID"/>
+            <result property="hospitalName" column="hospitalName"/>
+            <result property="hospitalAddress" column="hospitalAddress"/>
+            <result property="hospitalTel" column="hospitalTel"/>
+            <result property="fax" column="fax"/>
+            <result property="email" column="email"/>
+        </association>
+
+        <association property="province" javaType="com.vslc.model.Province" >
+            <id property="provinceID" column="provinceID"/>
+            <result property="provinceName" column="provinceName"/>
+        </association>
+
+        <association property="city" javaType="com.vslc.model.City" >
+            <id property="cityID" column="cityID"/>
+            <result property="cityName" column="cityName"/>
+            <result property="provinceID" column="provinceID"/>
+        </association>
+    </resultMap>
+
+
+    <select id="login" parameterType="map" resultMap="userMap">
+        SELECT u.userID,u.userAccount,u.userPassword,u.realName,p.*
+        FROM user AS u
+        LEFT JOIN permissionGroup AS p ON u.permissionGroupID=p.permissionGroupID
+        WHERE u.userAccount = #{userAccount} AND u.userPassword = #{userPassword}
+        LIMIT 1
+    </select>
+
+    <select id="search" parameterType="map" resultMap="userMap">
+        SELECT u.*,h.*,p.*,c.*,pr.*
+        FROM user AS u
+        LEFT JOIN hospital AS h ON u.hospitalID=h.hospitalID
+        LEFT JOIN permissionGroup AS p ON u.permissionGroupID=p.permissionGroupID
+        LEFT JOIN city AS c ON u.cityID=c.cityID
+        LEFT JOIN province AS pr ON u.provinceID=pr.provinceID
+        <where>
+            <if test="account!=null">
+                AND u.userAccount LIKE concat(concat('%',#{account}),'%')
+            </if>
+            <if test="realName!=null">
+                AND u.realName LIKE concat(concat('%',#{realName}),'%')
+            </if>
+        </where>
+        LIMIT #{pageStart},#{pageSize}
+    </select>
+
+    <select id="find" parameterType="map" resultMap="userMap">
+        SELECT u.userID,u.realName,h.*,p.*
+        FROM user AS u
+        LEFT JOIN hospital AS h ON u.hospitalID=h.hospitalID
+        LEFT JOIN permissionGroup AS p ON u.permissionGroupID=p.permissionGroupID
+        <where>
+            <if test=" permissionGroupID!='all' ">
+                AND u.permissionGroupID = #{permissionGroupID}
+            </if>
+            <if test=" fuzzySearch!='' ">
+                AND u.realName LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="findByUserID" parameterType="integer" resultMap="userMap">
+        SELECT u.*
+        FROM user u
+        WHERE u.userID = #{userID}
+    </select>
+
+    <select id="getCount" parameterType="map" resultType="integer">
+        SELECT COUNT(*)
+        FROM user AS u
+        <where>
+            <if test="account!=null">
+                AND u.userAccount LIKE concat(concat('%',#{account}),'%')
+            </if>
+            <if test="realName!=null">
+                AND u.realName LIKE concat(concat('%',#{realName}),'%')
+            </if>
+        </where>
+    </select>
+
+    <insert id="add" parameterType="com.vslc.model.User" useGeneratedKeys="true" keyProperty="userID">
+        INSERT INTO user(userAccount,userPassword,permissionGroupID,realName,sex,birthday
+            ,cardID,hospitalID,provinceID,cityID,address,postCode,title,tel,fax,email)
+        VALUES (#{userAccount},#{userPassword},#{permissionGroup.permissionGroupID}
+            ,#{realName},#{sex},#{birthday},#{cardID},#{hospital.hospitalID}
+            ,#{province.provinceID},#{city.cityID},#{address},#{postCode},#{title},#{tel},#{fax},#{email})
+    </insert>
+
+    <update id="update" parameterType="com.vslc.model.User">
+        UPDATE user set userAccount=#{userAccount},userPassword=#{userPassword}
+            ,permissionGroupID=#{permissionGroup.permissionGroupID},realName=#{realName}
+            ,sex=#{sex},birthday=#{birthday},cardID=#{cardID},hospitalID=#{hospital.hospitalID}
+            ,provinceID=#{province.provinceID},cityID=#{city.cityID},address=#{address}
+            ,postCode=#{postCode},title=#{title},tel=#{tel},fax=#{fax},email=#{email}
+        WHERE userID = #{userID}
+    </update>
+
+    <delete id="delete" parameterType="integer">
+        DELETE FROM user WHERE userID = #{userID}
+    </delete>
+</mapper>

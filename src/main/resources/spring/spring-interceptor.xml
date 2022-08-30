@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 配置拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/page/**"/>
+            <bean class="com.vslc.interceptor.PageInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/user/**"/>
+            <bean class="com.vslc.interceptor.UserInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/inspection/**"/>
+            <bean class="com.vslc.interceptor.InspectionInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/sequence/**"/>
+            <bean class="com.vslc.interceptor.SequenceInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/patient/**"/>
+            <bean class="com.vslc.interceptor.PatientInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/function/**"/>
+            <bean class="com.vslc.interceptor.FunctionInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/pergr/**"/>
+            <bean class="com.vslc.interceptor.PermissionGroupInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/hospital/**"/>
+            <bean class="com.vslc.interceptor.HospitalInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/disease/**"/>
+            <bean class="com.vslc.interceptor.DiseaseInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/mode/**"/>
+            <bean class="com.vslc.interceptor.ModeInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/examination/**"/>
+            <bean class="com.vslc.interceptor.ExaminationInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/pathology/**"/>
+            <bean class="com.vslc.interceptor.PathologyInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

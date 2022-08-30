@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.IPermissionGroupDao">
+
+    <resultMap type="com.vslc.model.PermissionGroup" id="permissionGroupMap">
+        <id property="permissionGroupID" column="permissionGroupID"/>
+        <result property="permissionGroupName" column="permissionGroupName"/>
+        <result property="baseMod" column="baseMod"/>
+        <result property="taskMod" column="taskMod"/>
+        <result property="uploadMod" column="uploadMod"/>
+        <result property="dataMod" column="dataMod"/>
+        <result property="drawMod" column="drawMod"/>
+        <result property="drawVerifyMod" column="drawVerifyMod"/>
+        <result property="signMod" column="signMod"/>
+        <result property="signVerifyMod" column="signVerifyMod"/>
+    </resultMap>
+
+    <select id="findByID" parameterType="int" resultMap="permissionGroupMap">
+        SELECT p.*
+        FROM permissiongroup AS p
+        WHERE permissionGroupID = #{permissionGroupID}
+    </select>
+
+    <select id="find" resultMap="permissionGroupMap">
+        SELECT p.*
+        FROM permissiongroup AS p
+    </select>
+
+    <select id="getCount" resultType="integer">
+        SELECT COUNT(*)
+        FROM permissiongroup AS p
+    </select>
+
+    <insert id="add" parameterType="com.vslc.model.PermissionGroup" useGeneratedKeys="true" keyProperty="permissionGroupID">
+        INSERT INTO permissiongroup(permissionGroupName,baseMod,taskMod,uploadMod,
+        dataMod,drawMod,drawVerifyMod,signMod,signVerifyMod)
+        VALUES (#{permissionGroupName},#{baseMod},#{taskMod},#{uploadMod},#{dataMod},
+        #{drawMod},#{drawVerifyMod},#{signMod},#{signVerifyMod})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM permissiongroup WHERE permissionGroupID = #{permissionGroupID}
+    </delete>
+
+    <update id="update" parameterType="com.vslc.model.PermissionGroup">
+        UPDATE permissiongroup set permissionGroupName = #{permissionGroupName},
+        baseMod=#{baseMod},taskMod=#{taskMod},uploadMod=#{uploadMod},
+        dataMod=#{dataMod},drawMod=#{drawMod},drawVerifyMod=#{drawVerifyMod},
+        signMod=#{signMod},signVerifyMod=#{signVerifyMod}
+        WHERE permissionGroupID = #{permissionGroupID}
+    </update>
+</mapper>

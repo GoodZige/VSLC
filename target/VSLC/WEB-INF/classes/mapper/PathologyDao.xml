@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.IPathologyDao">
+
+    <resultMap type="com.vslc.model.Pathology" id="pathologyMap">
+        <id property="pathologyID" column="pathologyID"/>
+        <result property="admissionNum" column="admissionNum"/>
+        <result property="isCIS" column="isCIS"/>
+        <result property="growthMode" column="growthMode"/>
+        <result property="position" column="position"/>
+        <result property="size" column="size"/>
+        <result property="VTS" column="VTS"/>
+        <result property="lymphonodus2" column="lymphonodus2"/>
+        <result property="lymphonodus3" column="lymphonodus3"/>
+        <result property="lymphonodus4" column="lymphonodus4"/>
+        <result property="lymphonodus5" column="lymphonodus5"/>
+        <result property="lymphonodus6" column="lymphonodus6"/>
+        <result property="lymphonodus7" column="lymphonodus7"/>
+        <result property="lymphonodus8" column="lymphonodus8"/>
+        <result property="lymphonodus9" column="lymphonodus9"/>
+        <result property="lymphonodus10" column="lymphonodus10"/>
+        <result property="lymphonodus11" column="lymphonodus11"/>
+        <result property="lymphonodus12" column="lymphonodus12"/>
+
+        <association property="patient" resultMap="com.vslc.dao.IPatientDao.patientMap">
+            <id property="patientID" column="patientID"/>
+            <result property="admissionNum" column="admissionNum"/>
+            <result property="englishName" column="englishName"/>
+            <result property="chineseName" column="chineseName"/>
+            <result property="patientSex" column="patientSex"/>
+            <result property="birday" column="birday"/>
+            <result property="IDNumber" column="IDNumber"/>
+            <result property="nativePlace" column="nativePlace"/>
+            <result property="contacts" column="contacts"/>
+            <result property="tel" column="tel"/>
+            <result property="admissionDate" column="admissionDate"/>
+            <result property="dischargeDate" column="dischargeDate"/>
+            <result property="surgeon" column="surgeon"/>
+            <result property="dischargeDiagnosis" column="dischargeDiagnosis"/>
+            <result property="operationDate" column="operationDate"/>
+            <result property="operationName" column="operationName"/>
+        </association>
+
+        <association property="pathologicalType" resultMap="com.vslc.dao.IPathologicalTypeDao.pathologicalTypeMap">
+            <id property="pathologicalTypeID" column="pathologicalTypeID"/>
+            <result property="pathologicalTypeName" column="pathologicalTypeName"/>
+        </association>
+    </resultMap>
+
+    <select id="findByPathologyID" parameterType="integer" resultMap="pathologyMap">
+        SELECT p.*,py.*,pt.*
+        FROM pathology AS p
+        LEFT JOIN pathologicaltype AS py ON p.pathologicalType = py.pathologicalTypeID
+        LEFT JOIN patient AS pt ON p.patientID = pt.patientID
+        WHERE p.pathologyID = #{pathologyID}
+    </select>
+
+    <select id="findByGrowthMode" parameterType="integer" resultMap="pathologyMap">
+        SELECT p.*,py.*,pt.*
+        FROM pathology AS p
+        LEFT JOIN pathologicaltype AS py ON p.pathologicalType = py.pathologicalTypeID
+        LEFT JOIN patient AS pt ON p.patientID = pt.patientID
+        WHERE p.growthMode &lt; #{growthMode}
+    </select>
+
+    <select id="findByPatientID" parameterType="string" resultMap="pathologyMap">
+        SELECT p.*,py.*,pt.*
+        FROM pathology AS p
+        LEFT JOIN pathologicaltype AS py ON p.pathologicalType = py.pathologicalTypeID
+        LEFT JOIN patient AS pt ON p.patientID = pt.patientID
+        WHERE p.patientID = #{patientID}
+    </select>
+
+    <select id="findByAdmissionNum" parameterType="string" resultMap="pathologyMap">
+        SELECT p.*,py.*,pt.*
+        FROM pathology AS p
+        LEFT JOIN pathologicaltype AS py ON p.pathologicalType = py.pathologicalTypeID
+        LEFT JOIN patient AS pt ON p.patientID = pt.patientID
+        WHERE p.admissionNum = #{admissionNum}
+    </select>
+
+    <insert id="add" parameterType="com.vslc.model.Pathology">
+        INSERT INTO pathology (admissionNum, patientID, pathologicalType, isCIS,
+                               growthMode, position, size, VTS,
+                               lymphonodus2, lymphonodus3, lymphonodus4, lymphonodus5,
+                               lymphonodus6, lymphonodus7, lymphonodus8, lymphonodus9,
+                               lymphonodus10, lymphonodus11, lymphonodus12)
+        VALUES (#{admissionNum}, #{patient.patientID}, #{pathologicalType.pathologicalTypeID}, #{isCIS},
+                #{growthMode}, #{position}, #{size}, #{VTS},
+                #{lymphonodus2}, #{lymphonodus3}, #{lymphonodus4}, #{lymphonodus5},
+                #{lymphonodus6}, #{lymphonodus7}, #{lymphonodus8}, #{lymphonodus9},
+                #{lymphonodus10}, #{lymphonodus11}, #{lymphonodus12})
+    </insert>
+</mapper>

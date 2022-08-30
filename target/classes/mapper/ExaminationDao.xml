@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.IExaminationDao">
+
+    <resultMap type="com.vslc.model.Examination" id="examinationMap">
+        <id property="examinationID" column="examinationID"/>
+        <result property="admissionNum" column="admissionNum"/>
+        <result property="APTT" column="APTT"/>
+        <result property="TT" column="TT"/>
+        <result property="PT" column="PT"/>
+        <result property="INR" column="INR"/>
+        <result property="D_D" column="D_D"/>
+        <result property="TP" column="TP"/>
+        <result property="GLO" column="GLO"/>
+        <result property="ALB" column="ALB"/>
+        <result property="AG" column="AG"/>
+        <result property="ALT" column="ALT"/>
+        <result property="CRP" column="CRP"/>
+        <result property="BuN" column="BuN"/>
+        <result property="Cr" column="Cr"/>
+        <result property="UA" column="UA"/>
+        <result property="TG" column="TG"/>
+        <result property="CH" column="CH"/>
+        <result property="HDL" column="HDL"/>
+        <result property="LDH" column="LDH"/>
+        <result property="ALP" column="ALP"/>
+        <result property="Y_GT" column="Y_GT"/>
+        <result property="CHE" column="CHE"/>
+        <result property="ADA" column="ADA"/>
+        <result property="CA724" column="CA724"/>
+        <result property="CA242" column="CA242"/>
+        <result property="CYF211" column="CYF211"/>
+        <result property="NSE" column="NSE"/>
+        <result property="AFP" column="AFP"/>
+        <result property="CEA" column="CEA"/>
+        <result property="CA125" column="CA125"/>
+        <result property="CA153" column="CA153"/>
+        <result property="CA199" column="CA199"/>
+        <result property="SCC" column="SCC"/>
+
+        <association property="patient" resultMap="com.vslc.dao.IPatientDao.patientMap">
+            <id property="patientID" column="patientID"/>
+            <result property="admissionNum" column="admissionNum"/>
+            <result property="englishName" column="englishName"/>
+            <result property="chineseName" column="chineseName"/>
+            <result property="patientSex" column="patientSex"/>
+            <result property="birday" column="birday"/>
+            <result property="IDNumber" column="IDNumber"/>
+            <result property="nativePlace" column="nativePlace"/>
+            <result property="contacts" column="contacts"/>
+            <result property="tel" column="tel"/>
+            <result property="admissionDate" column="admissionDate"/>
+            <result property="dischargeDate" column="dischargeDate"/>
+            <result property="surgeon" column="surgeon"/>
+            <result property="dischargeDiagnosis" column="dischargeDiagnosis"/>
+            <result property="operationDate" column="operationDate"/>
+            <result property="operationName" column="operationName"/>
+        </association>
+    </resultMap>
+
+    <select id="findByExaminationID" parameterType="integer" resultMap="examinationMap">
+        SELECT e.*,p.*
+        FROM examination AS e
+        LEFT JOIN patient AS p ON e.patientID = p.patientID
+        WHERE e.examinationID = #{examinationID}
+    </select>
+
+    <select id="findByPatientID" parameterType="string" resultMap="examinationMap">
+        SELECT e.*
+        FROM examination AS e
+        WHERE e.patientID = #{patientID}
+    </select>
+
+    <insert id="add" parameterType="com.vslc.model.Examination">
+        INSERT INTO examination (patientID,admissionNum,APTT,TT,PT,INR,D_D,TP,
+        GLO,ALB,AG,ALT,CRP,BuN,Cr,UA,TG,CH,HDL,LDH,ALP,Y_GT,CHE,ADA,
+        CA724,CA242,CYF211,NSE,AFP,CEA,CA125,CA153,CA199,SCC)
+        VALUES (#{patient.patientID},#{admissionNum},#{APTT},#{TT},#{PT},#{INR},#{D_D},#{TP},
+        #{GLO},#{ALB},#{AG},#{ALT},#{CRP},#{BuN},#{Cr},#{UA},#{TG},#{CH},#{HDL},#{LDH},#{ALP},#{Y_GT},#{CHE},#{ADA},
+        #{CA724},#{CA242},#{CYF211},#{NSE},#{AFP},#{CEA},#{CA125},#{CA153},#{CA199},#{SCC})
+    </insert>
+</mapper>

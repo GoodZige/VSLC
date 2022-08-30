@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.IReviewResultDao">
+
+    <resultMap type="com.vslc.model.ReviewResult" id="reviewResultMap">
+        <id property="reviewID" column="reviewID"/>
+        <result property="sketchScore" column="sketchScore"/>
+        <result property="reviewAdvice" column="reviewAdvice"/>
+        <result property="sketchFile" column="sketchFile"/>
+        <result property="sketchType" column="sketchType"/>
+        <result property="sketchNum" column="sketchNum"/>
+
+        <association property="examiner" javaType="com.vslc.model.User" >
+            <id property="userID" column="userID"/>
+        </association>
+
+        <association property="sequence" javaType="com.vslc.model.Sequence" >
+            <id property="sequenceID" column="sequenceID"/>
+            <result property="sequenceName" column="sequenceName"/>
+            <result property="sequenceNum" column="sequenceNum"/>
+            <result property="thickness" column="thickness"/>
+            <result property="fileNum" column="fileNum"/>
+            <result property="dcmPath" column="dcmPath"/>
+        </association>
+    </resultMap>
+
+    <select id="search" parameterType="map" resultMap="reviewResultMap">
+        SELECT r.*,u.*,s.*
+        FROM reviewresult AS r
+        LEFT JOIN user AS u ON r.examiner=u.userID
+        LEFT JOIN sequence AS s ON r.sequenceID=s.sequenceID
+        <where>
+            <if test="reviewID != null">
+                AND r.reviewID = #{reviewID}
+            </if>
+            <if test="sequenceID != null">
+                AND r.sequenceID = #{sequenceID}
+            </if>
+            <if test="sketchFile != null">
+                AND r.sketchFile = #{sketchFile}
+            </if>
+            <if test="sketchType != null">
+                AND r.sketchType = #{sketchType}
+            </if>
+            <if test="sketchNum != null">
+                AND r.sketchNum = #{sketchNum}
+            </if>
+        </where>
+    </select>
+
+    <select id="findOne" parameterType="map" resultMap="reviewResultMap">
+        SELECT r.*
+        FROM reviewresult AS r
+        WHERE r.sequenceID = #{sequence.sequenceID}
+        AND r.sketchType = #{sketchType}
+        AND r.sketchNum = #{sketchNum}
+    </select>
+
+    <select id="findTypeList" parameterType="map" resultMap="reviewResultMap">
+        SELECT r.*
+        FROM reviewresult AS r
+        WHERE r.sequenceID = #{sequence.sequenceID}
+        AND r.sketchType = #{sketchType}
+    </select>
+
+    <select id="findBySequenceID" parameterType="integer" resultMap="reviewResultMap">
+        SELECT r.*
+        FROM reviewresult AS r
+        WHERE r.sequenceID = #{sequenceID}
+    </select>
+
+    <insert id="add" parameterType="com.vslc.model.ReviewResult" useGeneratedKeys="true" keyProperty="reviewID">
+        INSERT INTO reviewresult(sketchScore,reviewAdvice,sketchFile,sketchType,sketchNum,sequenceID,examiner)
+        VALUES (#{sketchScore},#{reviewAdvice},#{sketchFile},#{sketchType},#{sketchNum},#{sequence.sequenceID},#{examiner.userID})
+    </insert>
+
+    <update id="update" parameterType="com.vslc.model.ReviewResult">
+        UPDATE reviewresult set sketchScore=#{sketchScore},reviewAdvice=#{reviewAdvice},
+            sketchNum=#{sketchNum},examiner=#{examiner.userID}
+        WHERE sequenceID = #{sequence.sequenceID}
+        AND sketchFile = #{sketchFile}
+    </update>
+
+    <delete id="delete" parameterType="com.vslc.model.ReviewResult">
+        DELETE FROM reviewresult
+        WHERE sequenceID = #{sequence.sequenceID}
+        AND sketchFile = #{sketchFile}
+    </delete>
+</mapper>

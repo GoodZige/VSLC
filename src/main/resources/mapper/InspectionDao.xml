@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.IInspectionDao">
+	
+	<resultMap type="com.vslc.model.Inspection" id="inspectionMap">
+		<id property="inspectionID" column="inspectionID"/>
+		<result property="remark" column="remark"/>
+		<result property="processID" column="processID"/>
+		<result property="inspectTime" column="inspectTime"/>
+		<result property="CTNumber" column="CTNumber"/>
+		<result property="thickness" column="thickness"/>
+		<result property="imageMethod" column="imageMethod"/>
+		<result property="isAbdomen" column="isAbdomen"/>
+		<result property="isAbdomenCE" column="isAbdomenCE"/>
+		<result property="PNSize" column="PNSize"/>
+		<result property="PNNum" column="PNNum"/>
+		<result property="PNSign" column="PNSign"/>
+		<result property="savePath" column="savePath"/>
+		<result property="uploader" column="uploader"/>
+		<result property="drawer" column="drawer"/>
+		<result property="drawExaminer" column="drawExaminer"/>
+		<result property="signer" column="signer"/>
+		<result property="signExaminer" column="signExaminer"/>
+		
+		<association property="patient" resultMap="com.vslc.dao.IPatientDao.patientMap">
+			<id property="patientID" column="patientID"/>
+			<result property="admissionNum" column="admissionNum"/>
+			<result property="englishName" column="englishName"/>
+			<result property="chineseName" column="chineseName"/>
+			<result property="patientSex" column="patientSex"/>
+			<result property="birday" column="birday"/>
+			<result property="IDNumber" column="IDNumber"/>
+			<result property="nativePlace" column="nativePlace"/>
+			<result property="contacts" column="contacts"/>
+			<result property="tel" column="tel"/>
+			<result property="admissionDate" column="admissionDate"/>
+			<result property="dischargeDate" column="dischargeDate"/>
+			<result property="surgeon" column="surgeon"/>
+			<result property="dischargeDiagnosis" column="dischargeDiagnosis"/>
+			<result property="operationDate" column="operationDate"/>
+			<result property="operationName" column="operationName"/>
+		</association>
+		
+		<association property="hospital" resultMap="com.vslc.dao.IHospitalDao.hospitalMap">
+		    <id property="hospitalID" column="hospitalID"/>
+		    <result property="hospitalName" column="hospitalName"/>
+		    <result property="hospitalShortName" column="hospitalShortName"/>
+		    <result property="hospitalAddress" column="hospitalAddress"/>
+		    <result property="hospitalTel" column="hospitalTel"/>
+		    <result property="fax" column="fax"/>
+		    <result property="email" column="email"/>
+		</association>
+
+		<association property="disease" resultMap="com.vslc.dao.IDiseaseDao.diseaseMap">
+		    <id property="diseaseID" column="diseaseID"/>
+		    <result property="diseaseName" column="diseaseName"/>
+		</association>
+
+		<association property="mode" resultMap="com.vslc.dao.IModeDao.modeMap">
+		    <id property="modeID" column="modeID"/>
+		    <result property="modeName" column="modeName"/>
+		</association>
+
+		<association property="editor" resultMap="com.vslc.dao.IUserDao.userMap">
+			<id property="userID" column="userID"/>
+			<result property="realName" column="realName"/>
+		</association>
+		
+	</resultMap>
+	
+	<select id="search" parameterType="map" resultMap="inspectionMap">
+	    SELECT i.*,p.englishName,p.patientID,p.admissionNum,p.birday
+		,d.diseaseName,m.modeName,h.hospitalName,u.realName
+	    FROM inspection AS i
+	    LEFT JOIN disease AS d ON i.diseaseID = d.diseaseID
+	    LEFT JOIN mode AS m ON i.modeId = m.modeId
+	    LEFT JOIN patient AS p ON i.patientID = p.patientID
+	    LEFT JOIN hospital AS h ON i.hospitalID = h.hospitalID
+		LEFT JOIN user AS u ON i.editor = u.userID
+	    <choose>
+	        <when test="logicalSearch!=null">
+				<where>
+					${logicalSearch}
+					<if test=" timeSearch != 'all' ">
+						AND DATEDIFF(CURDATE(), i.inspectTime) &lt; #{timeSearch}
+					</if>
+					<if test=" hospitalID!='all' ">
+						AND i.hospitalID = #{hospitalID}
+					</if>
+					<if test=" uploader!='all' ">
+						OR i.uploader = #{uploader}
+					</if>
+					<if test=" drawer!='all' ">
+						OR i.drawer = #{drawer}
+					</if>
+					<if test=" drawExaminer!='all' ">
+						OR i.drawExaminer = #{drawExaminer}
+					</if>
+					<if test=" signer!='all' ">
+						OR i.signer = #{signer}
+					</if>
+					<if test=" signExaminer!='all' ">
+						OR i.signExaminer = #{signExaminer}
+					</if>
+				</where>
+	        </when>
+	        <otherwise>
+	            <where>
+	    	        <if test=" fuzzySearch != null ">
+	    		        AND (
+	    		            p.englishName LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%')
+						    OR p.admissionNum LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%')
+	    		            OR i.patientID LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%') 
+	    		            OR i.CTNumber LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%')
+	    		        ) 
+	    	        </if>
+					<if test=" timeSearch != 'all' ">
+						AND DATEDIFF(CURDATE(), i.inspectTime) &lt; #{timeSearch}
+					</if>
+					<if test=" hospitalID!='all' ">
+						AND i.hospitalID = #{hospitalID}
+					</if>
+					<if test=" uploader!='all' ">
+						OR i.uploader = #{uploader}
+					</if>
+					<if test=" drawer!='all' ">
+						OR i.drawer = #{drawer}
+					</if>
+					<if test=" drawExaminer!='all' ">
+						OR i.drawExaminer = #{drawExaminer}
+					</if>
+					<if test=" signer!='all' ">
+						OR i.signer = #{signer}
+					</if>
+					<if test=" signExaminer!='all' ">
+						OR i.signExaminer = #{signExaminer}
+					</if>
+	            </where>
+	        </otherwise>
+	    </choose>
+	</select>
+	
+	<select id="getCount" parameterType="map" resultType="integer">
+		SELECT COUNT(*)
+	    FROM inspection AS i
+	    LEFT JOIN disease AS d ON i.diseaseID = d.diseaseID
+	    LEFT JOIN mode AS m ON i.modeId = m.modeId
+	    LEFT JOIN patient AS p ON i.patientID = p.patientID
+	    LEFT JOIN hospital AS h ON i.hospitalID = h.hospitalID
+	    <choose>
+	        <when test="logicalSearch != null ">
+				<where>
+					${logicalSearch}
+					<if test=" timeSearch != 'all' ">
+						AND DATEDIFF(CURDATE(), i.inspectTime) &lt; #{timeSearch}
+					</if>
+					<if test=" hospitalID!='all' ">
+						AND i.hospitalID = #{hospitalID}
+					</if>
+					<if test=" uploader!='all' ">
+						OR i.uploader = #{uploader}
+					</if>
+					<if test=" drawer!='all' ">
+						OR i.drawer = #{drawer}
+					</if>
+					<if test=" drawExaminer!='all' ">
+						OR i.drawExaminer = #{drawExaminer}
+					</if>
+					<if test=" signer!='all' ">
+						OR i.signer = #{signer}
+					</if>
+					<if test=" signExaminer!='all' ">
+						OR i.signExaminer = #{signExaminer}
+					</if>
+				</where>
+	        </when>
+	        <otherwise>
+	            <where>
+	    	        <if test=" fuzzySearch != '' ">
+	    		        AND (
+	    		            p.englishName LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%')
+	    		            OR i.patientID LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%') 
+	    		            OR i.CTNumber LIKE CONCAT(CONCAT('%',#{fuzzySearch}),'%')
+	    		        ) 
+	    	        </if>
+					<if test=" timeSearch != 'all' ">
+						AND DATEDIFF(CURDATE(), i.inspectTime) &lt; #{timeSearch}
+					</if>
+					<if test=" hospitalID!='all' ">
+						AND i.hospitalID = #{hospitalID}
+					</if>
+					<if test=" uploader!='all' ">
+						OR i.uploader = #{uploader}
+					</if>
+					<if test=" drawer!='all' ">
+						OR i.drawer = #{drawer}
+					</if>
+					<if test=" drawExaminer!='all' ">
+						OR i.drawExaminer = #{drawExaminer}
+					</if>
+					<if test=" signer!='all' ">
+						OR i.signer = #{signer}
+					</if>
+					<if test=" signExaminer!='all' ">
+						OR i.signExaminer = #{signExaminer}
+					</if>
+	            </where>
+	        </otherwise>
+	    </choose>
+	</select>
+	
+	<select id="findByInspectionID" parameterType="string" resultMap="inspectionMap">
+	    SELECT i.*,d.*,m.*,p.*
+	    FROM inspection i
+	    LEFT JOIN disease AS d ON i.diseaseID = d.diseaseID
+	    LEFT JOIN mode AS m ON i.modeId = m.modeId
+	    LEFT JOIN patient AS p ON i.patientID = p.patientID
+	    WHERE i.inspectionID = #{inspectionID}
+	</select>
+	
+	<select id="findByPatientID" parameterType="string" resultMap="inspectionMap">
+	    SELECT i.*,p.*,d.*,m.*
+	    FROM inspection AS i
+	    LEFT JOIN disease AS d ON i.diseaseID = d.diseaseID
+	    LEFT JOIN mode AS m ON i.modeId = m.modeId
+	    LEFT JOIN patient AS p ON i.patientID = p.patientID
+	    WHERE i.patientID = #{patientID}
+	</select>
+
+	<insert id="add" parameterType="com.vslc.model.Inspection">
+		INSERT INTO inspection (patientID,modeID,hospitalID,
+		inspectionID,inspectTime,CTNumber,savePath,uploader)
+		VALUES (#{patient.patientID},#{mode.modeID},#{hospital.hospitalID},
+		#{inspectionID},#{inspectTime},#{CTNumber},#{savePath},#{uploader})
+	</insert>
+
+	<update id="update" parameterType="map">
+		UPDATE inspection SET editor=#{editor},remark=#{remark},processID=#{processID},imageMethod=#{imageMethod}
+		,thickness=#{thickness},PNSize=#{PNSize},PNNum=#{PNNum},PNSign=#{PNSign}
+		,diseaseID= (SELECT d.diseaseID FROM disease d WHERE d.diseaseName = #{diseaseName})
+		<if test="isAbdomenCE!=null">
+			,isAbdomenCE=#{isAbdomenCE}
+		</if>
+		<if test="isAbdomen!=null">
+			,isAbdomen=#{isAbdomen}
+		</if>
+		WHERE inspectioniD = #{inspectionID}
+	</update>
+
+	<update id="updateProcessID" parameterType="com.vslc.model.Inspection">
+		UPDATE inspection SET processID=#{processID}
+		WHERE inspectionID = #{inspectionID}
+	</update>
+
+	<update id="updateWorker" parameterType="java.util.Map">
+		UPDATE inspection SET drawer=#{drawer},drawExaminer=#{drawExaminer}
+		,signer=#{signer},signExaminer=#{signExaminer}
+		<foreach collection="checks" item="inspectionID" open="WHERE inspectionID IN(" close=")" separator=",">
+			#{inspectionID}
+		</foreach>
+	</update>
+
+	<delete id="delete" parameterType="java.util.List">
+		DELETE FROM inspection
+		<foreach collection="list" item="inspectionID" open="WHERE inspectionID IN(" close=")" separator=",">
+			#{inspectionID}
+		</foreach>
+	</delete>
+</mapper>

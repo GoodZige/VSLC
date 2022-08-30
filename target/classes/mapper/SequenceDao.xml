@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vslc.dao.ISequenceDao">
+
+    <resultMap type="com.vslc.model.Sequence" id="sequenceMap">
+        <id property="sequenceID" column="sequenceID"/>
+        <result property="sequenceName" column="sequenceName"/>
+        <result property="sequenceNum" column="sequenceNum"/>
+        <result property="thickness" column="thickness"/>
+        <result property="fileNum" column="fileNum"/>
+        <result property="isSketch" column="isSketch"/>
+        <result property="dcmPath" column="dcmPath"/>
+
+        <!-- OneToOne -->
+        <association property="inspection" resultMap="com.vslc.dao.IInspectionDao.inspectionMap">
+            <id property="inspectionID" column="inspectionID"/>
+            <result property="processID" column="processID"/>
+            <result property="inspectTime" column="inspectTime"/>
+            <result property="CTNumber" column="CTNumber"/>
+            <result property="imageMethod" column="imageMethod"/>
+            <result property="isAbdomen" column="isAbdomen"/>
+            <result property="isAbdomenCE" column="isAbdomenCE"/>
+            <result property="pnSize" column="pnSize"/>
+            <result property="pnNum" column="pnNum"/>
+            <result property="pnSign" column="pnSign"/>
+            <result property="savePath" column="savePath"/>
+        </association>
+
+    </resultMap>
+
+    <select id="findByInspectionID" parameterType="string" resultMap="sequenceMap">
+        SELECT s.*,i.*
+        FROM sequence AS s
+        INNER JOIN inspection as i ON i.inspectionID = s.inspectionID
+        WHERE s.inspectionID = #{inspectionID}
+    </select>
+
+    <select id="findBySequenceID" parameterType="integer" resultMap="sequenceMap">
+        SELECT s.*,i.*
+        FROM sequence AS s
+        LEFT JOIN inspection as i on i.inspectionID = s.inspectionID
+        WHERE s.sequenceID = #{sequenceID}
+    </select>
+
+    <select id="findBySequenceIDs" parameterType="java.util.List" resultMap="sequenceMap">
+        SELECT s.*,i.*
+        FROM sequence AS s
+        INNER JOIN inspection as i ON i.inspectionID = s.inspectionID
+        <foreach collection="list" item="sequenceID" open="WHERE sequenceID IN(" close=")" separator=",">
+            #{sequenceID}
+        </foreach>
+    </select>
+
+    <select id="findByIsSketch" parameterType="integer" resultMap="sequenceMap">
+        SELECT s.*,i.*
+        FROM sequence AS s
+        LEFT JOIN inspection as i on i.inspectionID = s.inspectionID
+        WHERE s.isSketch = #{isSketch}
+    </select>
+
+    <select id="findOne" parameterType="map" resultMap="sequenceMap">
+        SELECT s.*
+        FROM sequence AS s
+        WHERE s.inspectionID = #{inspectionID}
+        AND s.sequenceNum = #{sequenceNum}
+    </select>
+
+    <insert id="add" parameterType="com.vslc.model.Sequence">
+        INSERT INTO sequence (sequenceName,sequenceNum,thickness,inspectionID,fileNum,isSketch,dcmPath)
+        VALUES (#{sequenceName},#{sequenceNum},#{thickness},#{inspection.inspectionID},#{fileNum},#{isSketch},#{dcmPath})
+    </insert>
+
+    <update id="update" parameterType="com.vslc.model.Sequence">
+        UPDATE sequence SET fileNum=#{fileNum},isSketch=#{isSketch}
+        WHERE sequenceID=#{sequenceID}
+    </update>
+
+    <update id="updateIsSketch" parameterType="com.vslc.model.Sequence">
+        UPDATE sequence SET isSketch=#{isSketch}
+        WHERE sequenceID=#{sequenceID}
+    </update>
+</mapper>

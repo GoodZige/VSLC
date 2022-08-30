@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="VSLC:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac13ee08-03b5-4880-8cb4-cda15e5bc118" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="vslc@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="vslc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="vslc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="vslc: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SketchResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/SketchResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5000">
+              <caret line="212" column="42" lean-forward="false" selection-start-line="212" selection-start-column="42" selection-end-line="212" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/controller/SequenceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4650">
+              <caret line="201" column="56" lean-forward="false" selection-start-line="201" selection-start-column="56" selection-end-line="201" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadAndScroll.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/review/loadAndScroll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="3156" column="46" lean-forward="false" selection-start-line="3156" selection-start-column="46" selection-end-line="3156" selection-end-column="46" />
+              <folding>
+                <marker date="1535622450690" expanded="true" signature="25594:25603" ph="..." />
+                <marker date="1535622450690" expanded="true" signature="25655:25664" ph="..." />
+                <marker date="1535622450690" expanded="true" signature="25722:25731" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+        <option value="Tag Library Descriptor" />
+        <option value="Jsp File" />
+        <option value="spring-beans.schema" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>scale</find>
+      <find>positionsArray</find>
+      <find>意见</find>
+      <find>onkey</find>
+      <find>splice</find>
+      <find>button == 2</find>
+      <find>[...</find>
+      <find>allPositionsInfo</find>
+      <find>json</find>
+      <find>drawResult</find>
+      <find>drawPositionList</find>
+      <find>first</find>
+      <find>currentResult</find>
+      <find>$(&quot;#save_sketch&quot;).off(&quot;click&quot;).click(function () {</find>
+      <find>dragMove</find>
+      <find>dragmove</find>
+      <find>tab</find>
+      <find>缩放</find>
+      <find>dbl</find>
+      <find>getsk</find>
+      <find>sketchSum</find>
+      <find>pushmove1</find>
+      <find>apiIndex</find>
+      <find>dragFlag</find>
+      <find>console.log</find>
+      <find>have</find>
+      <find>currentDraw</find>
+      <find>edits</find>
+      <find>save</find>
+      <find>46</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="chenlele" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/css/reviewSketch.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/sketch/loadAndScroll.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/sketch/reviewSketch.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/sketch/cornerstoneTools.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/reviewSketch.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/review/reviewSketch.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/controller/ReviewResultController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/dao/ISequenceDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/SequenceDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-interceptor.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/array/CopyMaskHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vslc/tools/array/CopyMaskHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/json/new1.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/SaveRootPath.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/array/ArrMaskHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/sketch.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/review/sketch.js" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vslc/tools/InsertContent.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vslc/tools/XMLUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/VO/ImportVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/service/impl/DataImportService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vslc/tools/array/RestructureMaskTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/service/impl/SequenceService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vslc/ClearApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/review/exampleImageLoader.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/dicom/ImgMatrixHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/info.css" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/sketch/SketchResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/vslc/tools/sketch/SketchResultTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/info.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/hospitalManagement.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/diseaseManagement.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/modeManagement.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/permissionGroupManagement.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/sketch.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/userManagement.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/info/info.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/review.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/review/review.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/SavePath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/controller/FunctionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/report/ReportUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/controller/SequenceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vslc/tools/SketchResult.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/review.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/review/loadAndScroll.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="VSLC Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="VSLC Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="880" />
+    <option name="y" value="58" />
+    <option name="width" value="960" />
+    <option name="height" value="346" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages ProjectPane="true" />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="review" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/实训/inventory-master" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/IdeaProjects/VSLC/src/main/webapp/js/review/loadAndScroll.js&#10;info.&#9;FILE&#9;file://E:/IdeaProjects/VSLC/src/main/webapp/js/info/info.js&#10;/load&#9;FILE&#9;file://D:/AppData/IdeaProjects/VSLC/src/main/webapp/js/sketch/exampleImageLoader.js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.vslc.tools.array" />
+      <recent name="com.vslc.tools" />
+      <recent name="com.vslc.model" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vslc.tools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\VSLC\src\main\java\com\vslc\tools\dicom" />
+      <recent name="E:\IdeaProjects\VSLC\src\main\java\com\vslc\controller" />
+      <recent name="E:\IdeaProjects\VSLC\src\main\webapp\js\review" />
+      <recent name="E:\IdeaProjects\VSLC\src\main\java\com\vslc\VO" />
+      <recent name="E:\IdeaProjects\VSLC\src\main\java\com\vslc\tools" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\VSLC\src\main\webapp\js" />
+      <recent name="E:\IdeaProjects\VSLC\src\main\webapp\WEB-INF\lib" />
+      <recent name="E:\IdeaProjects\VSLC\src\main\webapp\json" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.VSLC Server">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="ClearApplication.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.vslc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VSLC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.vslc" />
+      <option name="MAIN_CLASS_NAME" value="com.vslc.ClearApplication" />
+      <option name="METHOD_NAME" value="clear" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RestructureMaskTest.getList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.vslc.tools.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VSLC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.vslc.tools.array" />
+      <option name="MAIN_CLASS_NAME" value="com.vslc.tools.array.RestructureMaskTest" />
+      <option name="METHOD_NAME" value="getList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestApplication.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.vslc.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VSLC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.vslc" />
+      <option name="MAIN_CLASS_NAME" value="com.vslc.TestApplication" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="VSLC Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.6" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8 (x32)">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="VSLC:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/VSLC" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_VSLC" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51214" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="VSLC:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.VSLC Server" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestApplication.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RestructureMaskTest.getList" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ClearApplication.clear" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClearApplication.clear" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RestructureMaskTest.getList" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestApplication.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac13ee08-03b5-4880-8cb4-cda15e5bc118" name="Default" comment="" />
+      <created>1520229150083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520229150083</updated>
+      <workItem from="1520229159002" duration="6137000" />
+      <workItem from="1520247352634" duration="7597000" />
+      <workItem from="1520412200075" duration="13914000" />
+      <workItem from="1520427265924" duration="2272000" />
+      <workItem from="1520481332254" duration="5021000" />
+      <workItem from="1520500711308" duration="8603000" />
+      <workItem from="1520771106580" duration="23000" />
+      <workItem from="1520775050395" duration="25000" />
+      <workItem from="1520826854404" duration="2495000" />
+      <workItem from="1520832889311" duration="659000" />
+      <workItem from="1520834147128" duration="1964000" />
+      <workItem from="1520842789055" duration="4076000" />
+      <workItem from="1520853651941" duration="1953000" />
+      <workItem from="1520855866461" duration="1771000" />
+      <workItem from="1520857961051" duration="2897000" />
+      <workItem from="1520864399577" duration="746000" />
+      <workItem from="1520912880413" duration="352000" />
+      <workItem from="1520936539959" duration="81000" />
+      <workItem from="1520936666115" duration="2628000" />
+      <workItem from="1520946018973" duration="33000" />
+      <workItem from="1521035749765" duration="1054000" />
+      <workItem from="1521083787175" duration="3820000" />
+      <workItem from="1521090549700" duration="177000" />
+      <workItem from="1521090903481" duration="99000" />
+      <workItem from="1521094084772" duration="4390000" />
+      <workItem from="1521113345734" duration="107000" />
+      <workItem from="1521176717098" duration="2438000" />
+      <workItem from="1521247935432" duration="13376000" />
+      <workItem from="1521272204865" duration="8712000" />
+      <workItem from="1521281055164" duration="1587000" />
+      <workItem from="1521343880056" duration="23279000" />
+      <workItem from="1521370618079" duration="1876000" />
+      <workItem from="1521374127876" duration="2719000" />
+      <workItem from="1521434788347" duration="1385000" />
+      <workItem from="1521439399846" duration="3358000" />
+      <workItem from="1521446974040" duration="4150000" />
+      <workItem from="1521451542320" duration="7083000" />
+      <workItem from="1521460626514" duration="96000" />
+      <workItem from="1521460758294" duration="1327000" />
+      <workItem from="1521462293003" duration="1890000" />
+      <workItem from="1521539649379" duration="4250000" />
+      <workItem from="1521544602444" duration="2008000" />
+      <workItem from="1521547248007" duration="171000" />
+      <workItem from="1521548692741" duration="369000" />
+      <workItem from="1521549095767" duration="575000" />
+      <workItem from="1521549703449" duration="459000" />
+      <workItem from="1521625878480" duration="79000" />
+      <workItem from="1521639368558" duration="2427000" />
+      <workItem from="1521690860539" duration="10539000" />
+      <workItem from="1521788204224" duration="5688000" />
+      <workItem from="1521850821919" duration="8210000" />
+      <workItem from="1521867019686" duration="13081000" />
+      <workItem from="1521901689805" duration="460000" />
+      <workItem from="1521953259787" duration="11937000" />
+      <workItem from="1521970175931" duration="9822000" />
+      <workItem from="1521980866973" duration="2548000" />
+      <workItem from="1522031067711" duration="2570000" />
+      <workItem from="1522033907855" duration="10789000" />
+      <workItem from="1522050418830" duration="821000" />
+      <workItem from="1522062886181" duration="4662000" />
+      <workItem from="1522226880871" duration="1554000" />
+      <workItem from="1522295440349" duration="2969000" />
+      <workItem from="1522301100359" duration="977000" />
+      <workItem from="1522302126717" duration="2287000" />
+      <workItem from="1522305378800" duration="291000" />
+      <workItem from="1522312403714" duration="15000" />
+      <workItem from="1522329800269" duration="8000" />
+      <workItem from="1522375734831" duration="10000" />
+      <workItem from="1522376592845" duration="13000" />
+      <workItem from="1522376875041" duration="26000" />
+      <workItem from="1522380756024" duration="783000" />
+      <workItem from="1522384496682" duration="1180000" />
+      <workItem from="1522386277146" duration="17000" />
+      <workItem from="1522388499732" duration="4782000" />
+      <workItem from="1522459615407" duration="21704000" />
+      <workItem from="1522573295473" duration="8000" />
+      <workItem from="1522573542271" duration="2854000" />
+      <workItem from="1522841931320" duration="949000" />
+      <workItem from="1522989507554" duration="1229000" />
+      <workItem from="1523175248974" duration="1254000" />
+      <workItem from="1523182207556" duration="1171000" />
+      <workItem from="1523233588435" duration="1860000" />
+      <workItem from="1523236647501" duration="357000" />
+      <workItem from="1523245545984" duration="2962000" />
+      <workItem from="1523251995519" duration="457000" />
+      <workItem from="1523252553685" duration="2130000" />
+      <workItem from="1523264274348" duration="3212000" />
+      <workItem from="1523446031201" duration="848000" />
+      <workItem from="1523448463917" duration="3610000" />
+      <workItem from="1523504822252" duration="12274000" />
+      <workItem from="1523518521289" duration="4400000" />
+      <workItem from="1523583233017" duration="14685000" />
+      <workItem from="1523600284420" duration="1053000" />
+      <workItem from="1523601603223" duration="5740000" />
+      <workItem from="1523668017303" duration="22965000" />
+      <workItem from="1524026231021" duration="10616000" />
+      <workItem from="1524051601571" duration="614000" />
+      <workItem from="1524120819991" duration="3836000" />
+      <workItem from="1524125808409" duration="10396000" />
+      <workItem from="1524203078449" duration="7612000" />
+      <workItem from="1524220836082" duration="276000" />
+      <workItem from="1524270853422" duration="18768000" />
+      <workItem from="1524376195679" duration="1677000" />
+      <workItem from="1524925762244" duration="1547000" />
+      <workItem from="1525010750736" duration="4260000" />
+      <workItem from="1525145268705" duration="19933000" />
+      <workItem from="1525312344949" duration="1859000" />
+      <workItem from="1525585827656" duration="38000" />
+      <workItem from="1525688421505" duration="313000" />
+      <workItem from="1525696074557" duration="26000" />
+      <workItem from="1525696332647" duration="1908000" />
+      <workItem from="1525957817556" duration="3660000" />
+      <workItem from="1526018573519" duration="14124000" />
+      <workItem from="1526083301229" duration="27652000" />
+      <workItem from="1526623164077" duration="51000" />
+      <workItem from="1526623436523" duration="13709000" />
+      <workItem from="1526689982478" duration="27228000" />
+      <workItem from="1527046497578" duration="3624000" />
+      <workItem from="1527219579768" duration="451000" />
+      <workItem from="1527666498918" duration="30000" />
+      <workItem from="1527833119659" duration="11281000" />
+      <workItem from="1527903878959" duration="5672000" />
+      <workItem from="1527919022913" duration="2373000" />
+      <workItem from="1527921484029" duration="11915000" />
+      <workItem from="1527986143948" duration="9917000" />
+      <workItem from="1528005564059" duration="11311000" />
+      <workItem from="1528438335133" duration="14424000" />
+      <workItem from="1528459944167" duration="448000" />
+      <workItem from="1528505076127" duration="9220000" />
+      <workItem from="1528524197159" duration="13629000" />
+      <workItem from="1529647488526" duration="13743000" />
+      <workItem from="1529714197807" duration="17613000" />
+      <workItem from="1530946499230" duration="691000" />
+      <workItem from="1531270395938" duration="22445000" />
+      <workItem from="1531299396240" duration="3100000" />
+      <workItem from="1531355633645" duration="25129000" />
+      <workItem from="1531441749061" duration="22877000" />
+      <workItem from="1531527607601" duration="13097000" />
+      <workItem from="1531700989901" duration="5871000" />
+      <workItem from="1531788065308" duration="22375000" />
+      <workItem from="1531875181427" duration="21368000" />
+      <workItem from="1531961279695" duration="26088000" />
+      <workItem from="1532047037109" duration="6576000" />
+      <workItem from="1532056573053" duration="12858000" />
+      <workItem from="1532079772874" duration="1031000" />
+      <workItem from="1532133552137" duration="20532000" />
+      <workItem from="1532306505274" duration="27431000" />
+      <workItem from="1532393122711" duration="25465000" />
+      <workItem from="1532477979955" duration="25498000" />
+      <workItem from="1532564510783" duration="22991000" />
+      <workItem from="1532651480958" duration="23372000" />
+      <workItem from="1532738089080" duration="15980000" />
+      <workItem from="1532912714413" duration="21982000" />
+      <workItem from="1532996974858" duration="22734000" />
+      <workItem from="1533083628377" duration="25108000" />
+      <workItem from="1533170151281" duration="23781000" />
+      <workItem from="1533256012073" duration="22131000" />
+      <workItem from="1533342588738" duration="22755000" />
+      <workItem from="1533459311141" duration="731000" />
+      <workItem from="1533516013872" duration="18189000" />
+      <workItem from="1533601739609" duration="24625000" />
+      <workItem from="1533688000919" duration="22419000" />
+      <workItem from="1533775028319" duration="7748000" />
+      <workItem from="1533796508162" duration="11982000" />
+      <workItem from="1533861662718" duration="20256000" />
+      <workItem from="1534121089817" duration="23588000" />
+      <workItem from="1534206931821" duration="24390000" />
+      <workItem from="1534293483215" duration="12993000" />
+      <workItem from="1534316306036" duration="8134000" />
+      <workItem from="1534379651860" duration="19265000" />
+      <workItem from="1534467202201" duration="22870000" />
+      <workItem from="1534725496129" duration="20624000" />
+      <workItem from="1534811392045" duration="20688000" />
+      <workItem from="1534897961844" duration="21018000" />
+      <workItem from="1534984076266" duration="11161000" />
+      <workItem from="1535071192319" duration="19285000" />
+      <workItem from="1535157752708" duration="11868000" />
+      <workItem from="1535329713431" duration="26384000" />
+      <workItem from="1535416249731" duration="24187000" />
+      <workItem from="1535502408871" duration="18608000" />
+      <workItem from="1535589061462" duration="26864000" />
+      <workItem from="1537281874334" duration="529000" />
+      <workItem from="1545008632847" duration="155000" />
+      <workItem from="1575897926300" duration="955000" />
+      <workItem from="1576235383880" duration="1488000" />
+      <workItem from="1577322220082" duration="35000" />
+    </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1520860620972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520860620972</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1521090009782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521090009782</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1521090364700</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521090364700</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ClearApplication_clear - 2018.08.21 at 10h 15m 29s.xml">
+      <configuration name="ClearApplication.clear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClearApplication_clear - 2018.08.21 at 10h 16m 47s.xml">
+      <configuration name="ClearApplication.clear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClearApplication_clear - 2018.08.28 at 16h 09m 31s.xml">
+      <configuration name="ClearApplication.clear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CopyMaskHandlerTest_test - 2018.06.01 at 16h 16m 21s.xml">
+      <configuration name="CopyMaskHandlerTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CopyMaskHandlerTest_test - 2018.06.01 at 16h 22m 01s.xml">
+      <configuration name="CopyMaskHandlerTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CopyMaskHandlerTest_test - 2018.06.01 at 16h 27m 01s.xml">
+      <configuration name="CopyMaskHandlerTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CopyMaskHandlerTest_test - 2018.06.01 at 16h 27m 40s.xml">
+      <configuration name="CopyMaskHandlerTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CopyMaskHandlerTest_test - 2018.06.01 at 16h 36m 21s.xml">
+      <configuration name="CopyMaskHandlerTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CopyMaskHandlerTest_test - 2018.06.01 at 16h 56m 02s.xml">
+      <configuration name="CopyMaskHandlerTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestructureMaskTest_getList - 2018.06.22 at 14h 24m 34s.xml">
+      <configuration name="RestructureMaskTest.getList" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1558995000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21814255" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25108695" sideWeight="0.4968017" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3289941" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18550107" sideWeight="0.6978261" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22121535" sideWeight="0.3021739" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3043478" sideWeight="0.49784017" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="first" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="second commit" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="31" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/model/FileTransferRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/review/jquery.mousewheel.min.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ModeDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="13497" column="38" lean-forward="true" selection-start-line="13497" selection-start-column="38" selection-end-line="13497" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/icon/triangle.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/icon/HU.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.nicescroll.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20140107/json-20140107.jar!/org/json/JSONArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1575">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/VO/ImportVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/sketch/SketchResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/model/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/PathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vslc/tools/sketch/SketchResultTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/controller/HospitalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CityDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/VO/SaveSketchVO.java" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="1101" column="4" lean-forward="false" selection-start-line="1101" selection-start-column="4" selection-end-line="1101" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/review/cornerstoneTools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="5317" column="31" lean-forward="false" selection-start-line="5317" selection-start-column="31" selection-end-line="5317" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="245" column="37" lean-forward="true" selection-start-line="245" selection-start-column="37" selection-end-line="245" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vslc/tools/report/PathologyReportTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/authority.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/hospitalManagement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/diseaseManagement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/permissionError.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/sketch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="39" column="47" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/permissionGroupManagement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/modeManagement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/userManagement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7650">
+          <caret line="306" column="1" lean-forward="false" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/info/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21500">
+          <caret line="860" column="30" lean-forward="false" selection-start-line="860" selection-start-column="30" selection-end-line="860" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vslc/tools/array/RestructureMaskTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/vslc/ClearApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/enums/MaskTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/review/exampleImageLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="75" column="47" lean-forward="true" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/review/sketch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/dicom/ImgMatrixHandler(1).java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/dicom/ImgMatrixHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="389" column="0" lean-forward="true" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/modal.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1788" lean-forward="false" selection-start-line="0" selection-start-column="1788" selection-end-line="0" selection-end-column="1788" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/SavePath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/controller/FunctionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="149" column="22" lean-forward="false" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/report/ReportUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/controller/SequenceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4650">
+          <caret line="201" column="56" lean-forward="false" selection-start-line="201" selection-start-column="56" selection-end-line="201" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/review.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="559" column="12" lean-forward="false" selection-start-line="559" selection-start-column="11" selection-end-line="559" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/review.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="87" column="74" lean-forward="false" selection-start-line="87" selection-start-column="74" selection-end-line="87" selection-end-column="74" />
+          <folding>
+            <marker date="1535533928593" expanded="false" signature="11269:11303" ph="..." />
+            <marker date="1535533928593" expanded="false" signature="11764:11805" ph="..." />
+            <marker date="1535533928593" expanded="false" signature="13088:13122" ph="..." />
+            <marker date="1535533928593" expanded="false" signature="13583:13624" ph="..." />
+            <marker date="1535533928593" expanded="false" signature="14907:14941" ph="..." />
+            <marker date="1535533928593" expanded="false" signature="15402:15443" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/review/review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vslc/tools/SketchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5000">
+          <caret line="212" column="42" lean-forward="false" selection-start-line="212" selection-start-column="42" selection-end-line="212" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/review/loadAndScroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="3156" column="46" lean-forward="false" selection-start-line="3156" selection-start-column="46" selection-end-line="3156" selection-end-column="46" />
+          <folding>
+            <marker date="1535622450690" expanded="true" signature="25594:25603" ph="..." />
+            <marker date="1535622450690" expanded="true" signature="25655:25664" ph="..." />
+            <marker date="1535622450690" expanded="true" signature="25722:25731" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>VSLC:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (x32)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>VSLC</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

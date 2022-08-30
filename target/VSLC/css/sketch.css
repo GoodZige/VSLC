@@ -1,0 +1,208 @@
+body {
+    background-color: #e7e3e2;
+    overflow-x:hidden;
+    height: 100%;
+}
+.title {
+    width: 100%;
+    height: .7rem;
+    background-color: #e7e3e2;
+}
+.main {
+    width: 100%;
+    height: 8.5rem;
+}
+.logo {
+    float: left;
+    text-align: left;
+}
+.logo img {
+    height: .5rem;
+    margin: .1rem 0 .1rem .1rem;
+}
+.tools {
+    width: 100%;
+    padding-left: .12rem;
+}
+.tools div {
+    width: .44rem;
+    height: .44rem;
+    margin: .03rem .07rem;
+    padding: .02rem;
+    float: left;
+    /*border: .02rem solid #1B9AF7;*/
+    /*border-radius: .1rem;*/
+}
+.tools div img {
+    width: .44rem;
+    height: .44rem;
+}
+.tools div span {
+    font-size: .15rem;
+    margin-left: .06rem;
+}
+/* pic */
+.picZone {
+    width: 88.5%;
+    position: absolute;
+}
+.picZone_01_01,.picZone_01_02 {
+    display: inline-block;
+    color: #f2f2f2;
+    width: 1.6rem;
+    font-size: .14rem;
+    text-align: center;
+    height: .22rem;
+    line-height: .22rem;
+    border-radius: .04rem;
+    border: .01rem solid #38f;
+}
+.picZone_01_01 {
+    border: .01rem solid #38f;
+    color: #000000;
+}
+.picZone_01_02 {
+    background-color: #38f;
+}
+.picZone_02 {
+    width:100%;
+}
+.picZone_02_01,.picZone_02_02,.picZone_02_03,.picZone_02_04 {
+    border: .01rem solid #000000;
+    display: inline-block;
+    width: 98.5%;
+    height: 8.5rem;
+    text-align:center;
+    padding-top: .05rem;
+}
+.picZone_02_01,picZone_02_02,picZone_02_03,picZone_02_04 {
+    position:relative;
+    /*margin-bottom: .05rem;*/
+}
+.reloadImg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.reloadImg2 {
+    position: absolute;
+    top: .26rem;
+}
+.reloadImg3 {
+    position: absolute;
+    top: 4.55rem;
+}
+.frameNumber_01 {
+    position: absolute;
+    top: 4.1rem;
+    left: .3rem;
+    z-index: 9999;
+    color: #d2cece;
+    font-size: .15rem;
+}
+.frameNumber_02 {
+    position: absolute;
+    top: 4.1rem;
+    left: 6.85rem;
+    z-index: 9999;
+    color: #d2cece;
+    font-size: .15rem;
+}
+.frameNumber_03 {
+    position: absolute;
+    top: 8.3rem;
+    left: .3rem;
+    z-index: 9999;
+    color: #d2cece;
+    font-size: .15rem;
+}
+/* picInfo */
+.picInfo {
+    width: 13%;
+    height: 8.5rem;
+    position: absolute;
+    left: 87.3%;
+}
+.picInfo_01 {
+    background-color: #D2CECD;
+    text-align: center;
+    color: #000000;
+    line-height: .25rem;
+    font-size: .16rem;
+    box-shadow: 0 0 10px #000000;
+    margin-bottom: .03rem;
+}
+.picInfo_02 {
+    width:100%;
+}
+.picInfo_02_01_02 {
+    width: 100%;
+    text-align: center;
+}
+.picInfo_02_01 {
+    width: 100%;
+    background-color: #E7E3E2;
+    height: 1.8rem;
+    padding: .1rem 0;
+    box-shadow: 0 0 10px #000000;
+    margin-bottom: .03rem;
+}
+.picInfo_02_01_01 {
+    text-align: center;
+    font-size: .14rem;
+    color: #000000;
+}
+.picInfo_02_01_02_01 {
+    border: .01rem solid #000000;
+    width: 60%;
+    height: 1.6rem;
+    margin-left: 20%;
+    margin-top: .05rem;
+    background-size:cover;
+}
+.picInfo_00 {
+    height: 8.5rem;
+    overflow-y: auto;
+}
+.picInfo_000 {
+    height: 8.5rem;
+    overflow: hidden;
+    width: 105%;
+}
+.waterMark {
+    position: absolute;
+    font-size: .2rem;
+}
+.listChoose {
+    background-color:#c5c5c5;
+}
+/*滑动条样式*/
+input[type=range] {
+    margin-top: 5px;
+    -webkit-appearance: none;
+    /*width: 300px;*/
+    border-radius: 3px; /*这个属性设置使填充进度条时的图形为圆角*/
+    background: -webkit-linear-gradient(#212121, #454545) no-repeat;
+    background-size: 0% 100%;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    /*box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; !*轨道内置阴影效果*!*/
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #828282;
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}

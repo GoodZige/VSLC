@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+/* 全局控制 */
+html,body{
+    height:100%;
+    background-color: #F4F5F5;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,fieldset,div,strong,label,em,b,a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: Microsoft Yahei,"宋体",Arial;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:none;
+    list-style:none;
+}
+label {
+    cursor:pointer;
+}
+img {
+    vertical-align:middle;
+}
+a {
+    font-size: 14px;
+    cursor:pointer;
+}
+a:link {
+    text-decoration:none;
+}
+a:visited {
+    color: #000000;
+    text-decoration:none !important;
+}
+a:hover {
+    color:#38f;
+    text-decoration:none !important;
+}
+.r_edit {
+    margin-top: 10px;
+}
+.r_edit td {
+    padding-bottom: 5px;
+}
+.r_edit td.left {
+    width: 90px;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 4px;
+}
+.r_txt01 {
+    width: 180px;
+    height: 25px;
+    float: left;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 3px 3px 3px 6px;
+    font-size: 12px;
+    color: #949494;
+}
